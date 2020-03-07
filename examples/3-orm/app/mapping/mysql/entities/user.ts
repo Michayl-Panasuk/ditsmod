@@ -1,5 +1,6 @@
-import { User } from '3-orm/app/entities/user';
 import { ORM } from '@ts-stack/mod';
+
+import { User } from '3-orm/app/entities/user';
 
 const { MysqlEntity, MysqlColumn } = ORM;
 
@@ -9,4 +10,6 @@ export class MysqlUser extends User {
   userId: number;
   @MysqlColumn()
   userName: string;
+  @MysqlColumn()
+  password: string;
 }

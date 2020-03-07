@@ -11,6 +11,9 @@ const {
   MYSQL_DATABASE: database
 } = process.env;
 
+/**
+ * @todo Refactor this to get `process.env` from a service.
+ */
 @Injectable()
 export class MysqlService {
   private pool: Pool;

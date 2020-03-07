@@ -28,3 +28,12 @@ export class MysqlMetadata {
   tableName: string;
   primaryColumns: string[];
 }
+
+type Some<T extends EntityModel> = {
+  [P in keyof T['prototype']]?: 0 | 1;
+};
+
+export interface FindParams<T extends EntityModel> {
+  select?: Some<T>;
+  where?: Partial<T['prototype']>;
+}

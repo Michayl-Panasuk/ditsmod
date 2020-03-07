@@ -1,4 +1,5 @@
 export abstract class User {
-  abstract userId: number;
-  abstract userName: string;
+  abstract readonly userId: number;
+  abstract readonly userName: string;
+  abstract readonly password: string;
 }

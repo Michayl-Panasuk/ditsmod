@@ -5,3 +5,4 @@ export { EntityManager } from './orm/services-per-req/entity-manager';
 export { OrmModule } from './orm/orm.module';
 export * from './orm/mapping/mysql-decorators';
 export { MysqlDriver } from './orm/mapping/mysql.driver';
+export { FindParams } from './orm/mapping/types';

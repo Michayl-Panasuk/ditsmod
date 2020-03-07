@@ -11,7 +11,7 @@ import { MysqlEntity, MysqlColumn } from '../mapping/mysql-decorators';
 import { MysqlService } from '../mapping/mysql.service';
 import { MysqlDriver } from '../mapping/mysql.driver';
 
-describe('EntityInjector', () => {
+describe('MetadataProvider', () => {
   class MockAppFactory extends AppFactory {
     injectorPerApp: ReflectiveInjector;
     prepareServerOptions(appModule: ModuleType) {
